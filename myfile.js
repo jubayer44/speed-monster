@@ -117,8 +117,8 @@ const start = () => {
       display.classList.remove("inactive");
 
       clearInterval(startCountdown);
-      countdownOverlay.style.display = "none";
       
+      countdownOverlay.style.display = "none";
       startTime = new Date().getTime();
     }
     count--;
@@ -137,5 +137,5 @@ setInterval(() => {
   const timeSpent = (currentTime - startTime) / 1000;
 
 
-  document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
+  document.getElementById("show-time").innerHTML = `${startTime ? parseInt(timeSpent) : 0} seconds`;
 }, 1000);
