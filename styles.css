@@ -141,8 +141,6 @@ button {
 }
 
 #histories {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr); */
   gap: 15px;
   justify-content: space-around;
   display: flex;
@@ -150,7 +148,7 @@ button {
 }
 
 .card {
-  width: 359px;
+  width: 32%;
   height: 100%;
   padding: 50px;
   justify-content: center;
@@ -194,6 +192,7 @@ button {
   }
   .card {
     flex-direction: column;
+    width: 100%;
     margin: 20px auto;
   }
   #histories {
